@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "question": "What is the jsx syntax ?",
+        "answers": [
+            {
+                "correct": false,
+                "text": "jsx is a syntax extension for php."
+            },
+            {
+                "correct": false,
+                "text": "jsx is a syntax extension for python."
+            },
+            {
+                "correct": true,
+                "text": "jsx is a syntax extension for javascript."
+            },
+            {
+                "correct": false,
+                "text": "jsx is a syntax extension for typeScript."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "question": "What is the javascript ?",
+        "answers": [
+            {
+                "correct": true,
+                "text": "a high level programming language."
+            },
+            {
+                "correct": false,
+                "text": "a low level programming language."
+            },
+            {
+                "correct": false,
+                "text": "a multi thread programming language."
+            },
+            {
+                "correct": false,
+                "text": "a human language."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "question": "What is the OOP ?",
+        "answers": [
+            {
+                "correct": true,
+                "text": "a programming style."
+            },
+            {
+                "correct": false,
+                "text": "a programming interface."
+            },
+            {
+                "correct": false,
+                "text": "a backend library."
+            },
+            {
+                "correct": false,
+                "text": "a php framework."
+            }
+        ]        
+    },
+    {
+        "id": 4,
+        "question": "What is the php framework ?",
+        "answers": [
+            {
+                "correct": true,
+                "text": "Laravel"
+            },
+            {
+                "correct": false,
+                "text": "Kotlin"
+            },
+            {
+                "correct": false,
+                "text": "React"
+            },
+            {
+                "correct": true,
+                "text": "Flutter"
+            }
+        ]        
+    }
+]

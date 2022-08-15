@@ -1,0 +1,150 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  color: #fff;
+  background: #020230;
+  &-main {
+    width: 75%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0), #020230),
+      url("../image/milyoner.jpg");
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-top {
+      margin-bottom: 8rem;
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      display: flex;
+      background: #020230a1;
+      align-items: center;
+      justify-content: center;
+      &-timer {
+        font-size: 4rem;
+        color: #fff;
+      }
+    }
+
+    &-bottom {
+      width: 80%;
+      .q-container {
+        &-question {
+          font-size: 2rem;
+          color: #fff;
+          margin-bottom: 1rem;
+          text-align: center;
+          padding: 2rem 0;
+          background-color: #020230cc;
+          border-radius: 1rem;
+          border: 3px solid #fff;
+
+          &-answer {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            &-item {
+              &.active {
+                background-color: #0000a0;
+                border-radius: 1rem;
+                border: 3px solid #fff;
+              }
+
+              &.correct {
+                animation: correct 3s ease forwards;
+              }
+              &.wrong {
+                animation: wrong 3s ease forwards;
+              }
+
+              width: 40%;
+              font-size: 2rem;
+              color: #fff;
+              margin-bottom: 1rem;
+              text-align: center;
+              padding: 2rem 0;
+              background-color: #020230cc;
+              border-radius: 1rem;
+              border: 3px solid #fff;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-stack {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-list {
+      width: 100%;
+      padding: 1.5rem;
+
+      &-item {
+        padding: 0.5rem;
+        margin: 1rem 0;
+        &.active {
+          background: #3d3df754;
+          border-radius: 1rem;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-no {
+          font-size: 1rem;
+          font-weight: 100;
+        }
+        &-amount {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes correct {
+  0%,
+  22%,
+  42% {
+    background: #3d3df754;
+  }
+
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(#3d3df754, #0000a0);
+  }
+
+  62%,
+  100% {
+    background: rgb(15, 226, 15);
+  }
+}
+
+
+@keyframes wrong {
+    0%,
+    22%,
+    42% {
+      background: #3d3df754;
+    }
+  
+    20%,
+    40%,
+    60% {
+      background: linear-gradient(#3d3df754, #0000a0);
+    }
+  
+    62%,
+    100% {
+      background: rgb(185, 21, 21);
+    }
+  }
